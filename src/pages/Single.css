@@ -1,0 +1,43 @@
+.single-page {
+  background-color: #f5f5f5;
+}
+
+.single-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 40px 15px;
+
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 30px;
+}
+
+.single-main,
+.single-sidebar {
+  min-width: 0;
+}
+
+@media (max-width: 992px) {
+  .single-container {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .single-sidebar {
+    width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .single-container {
+    grid-template-columns: 1fr;
+    padding: 30px 15px;
+    gap: 25px;
+  }
+
+  .single-main,
+  .single-sidebar {
+    width: 100%;
+    min-width: 0;
+  }
+}

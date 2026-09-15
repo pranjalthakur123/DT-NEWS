@@ -1,0 +1,277 @@
+/* =========================
+   FOOTER
+========================= */
+
+.footer {
+  background-color: #1e2024;
+  color: #ffffff;
+  margin-top: 40px;
+  padding: 50px 15px;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+
+/* =========================
+   FOOTER HEADINGS
+========================= */
+
+.footer-column h5 {
+  margin: 0 0 20px;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.footer-column h6 {
+  margin: 25px 0 15px;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+
+/* =========================
+   CONTACT
+========================= */
+
+.footer-column p {
+  margin: 0 0 12px;
+  color: #aaaaaa;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.6;
+}
+
+.footer-column p i {
+  width: 20px;
+  margin-right: 8px;
+}
+
+
+/* =========================
+   SOCIAL BUTTONS
+========================= */
+
+.footer-social {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.footer-social a {
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: #6c757d;
+  color: #ffffff;
+
+  text-decoration: none;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.footer-social a:hover {
+  background-color: #f5390a;
+  color: #ffffff;
+}
+
+
+/* =========================
+   POPULAR NEWS
+========================= */
+
+.footer-popular-news {
+  margin-bottom: 20px;
+}
+
+.footer-news-meta {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.footer-news-meta a {
+  color: #aaaaaa;
+  text-decoration: none;
+}
+
+.footer-news-meta small {
+  font-size: 12px;
+}
+
+.footer-badge {
+  background-color: #f5390a;
+  color: #ffffff !important;
+
+  padding: 4px 6px;
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+
+  text-decoration: none;
+}
+
+.footer-news-title {
+  display: block;
+
+  color: #aaaaaa;
+  text-decoration: none;
+
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1.5;
+  text-transform: uppercase;
+}
+
+.footer-news-title:hover {
+  color: #ffffff;
+}
+
+
+/* =========================
+   CATEGORIES
+========================= */
+
+.footer-categories {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -4px;
+}
+
+.footer-categories a {
+  display: inline-block;
+
+  margin: 4px;
+  padding: 6px 10px;
+
+  background-color: #6c757d;
+  color: #ffffff;
+
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.footer-categories a:hover {
+  background-color: #f5390a;
+}
+
+
+/* =========================
+   FLICKR PHOTOS
+========================= */
+
+.footer-flickr {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+.footer-flickr a {
+  display: block;
+}
+
+.footer-flickr img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+}
+
+
+/* =========================
+   COPYRIGHT
+========================= */
+
+.footer-bottom {
+  background-color: #111111;
+  padding: 20px 15px;
+
+  text-align: center;
+}
+
+.footer-bottom p {
+  margin: 0;
+
+  color: #aaaaaa;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.footer-bottom a {
+  color: #f5390a;
+  text-decoration: none;
+}
+
+.footer-bottom a:hover {
+  text-decoration: underline;
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 992px) {
+  .footer-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 35px 30px;
+  }
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 576px) {
+  .footer {
+    padding: 40px 15px;
+  }
+
+  .footer-container {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .footer-column h5 {
+    font-size: 18px;
+    margin-bottom: 18px;
+  }
+
+  .footer-column h6 {
+    font-size: 15px;
+  }
+
+  .footer-social a {
+    width: 42px;
+    height: 42px;
+  }
+
+  .footer-flickr {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+
+  .footer-bottom {
+    padding: 18px 15px;
+  }
+
+  .footer-bottom p {
+    font-size: 12px;
+  }
+}

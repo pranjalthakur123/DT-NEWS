@@ -1,0 +1,381 @@
+/* =========================
+   Top Header
+========================= */
+
+.topbar {
+  background-color: #1e2024;
+  padding: 0 5%;
+  min-height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.topbar-left {
+  display: flex;
+  align-items: center;
+}
+
+.topbar-left a,
+.topbar-left span {
+  color: #999;
+  text-decoration: none;
+  font-size: 13px;
+  padding: 10px 15px;
+  border-right: 1px solid #444;
+}
+
+.topbar-left span {
+  padding-left: 0;
+}
+
+.topbar-left a:hover {
+  color: #f5390a;
+}
+
+.topbar-social {
+  display: flex;
+  align-items: center;
+}
+
+.topbar-social a {
+  color: #999;
+  text-decoration: none;
+  padding: 10px 12px;
+  font-size: 14px;
+}
+
+.topbar-social a:hover {
+  color: #f5390a;
+}
+
+
+/* =========================
+   Logo + Advertisement
+========================= */
+
+.brand-section {
+  min-height: 140px;
+  padding: 15px 5%;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.brand-logo {
+  text-decoration: none;
+  display: inline-block;
+}
+
+.header-ad img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+
+/* =========================
+   Logo Image
+========================= */
+
+.brand-logo img {
+  width: 160px;
+  height: auto;
+  display: block;
+}
+
+.mobile-logo img {
+  width: 120px;
+  height: auto;
+  display: block;
+}
+
+
+/* =========================
+   Main Navigation
+========================= */
+
+.main-nav {
+  min-height: 55px;
+  padding: 0 5%;
+  background-color: #1e2024;
+  display: flex;
+  align-items: center;
+}
+
+.mobile-logo {
+  display: none;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.nav-links > a,
+.nav-dropdown > a {
+  display: flex;
+  align-items: center;
+  height: 55px;
+  padding: 0 18px;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.nav-links > a:hover,
+.nav-dropdown > a:hover {
+  background-color: #f5390a;
+  color: #ffffff;
+}
+
+
+/* =========================
+   Dropdown
+========================= */
+
+.nav-dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 55px;
+  left: 0;
+  display: none;
+  min-width: 180px;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  z-index: 1000;
+}
+
+.nav-dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu a {
+  display: block;
+  padding: 10px 15px;
+  color: #333;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.dropdown-menu a:hover {
+  background-color: #f5390a;
+  color: #ffffff;
+}
+
+
+/* =========================
+   Search
+========================= */
+
+.nav-search {
+  margin-left: auto;
+  display: flex;
+  width: 300px;
+}
+
+.nav-search input {
+  flex: 1;
+  border: none;
+  outline: none;
+  padding: 10px 15px;
+  font-size: 14px;
+}
+
+.nav-search button {
+  width: 50px;
+  border: none;
+  background-color: #f5390a;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.nav-search button:hover {
+  background-color: #850000;
+}
+
+/* =========================
+   Responsive Navigation
+========================= */
+
+.menu-toggle {
+  display: none;
+  margin-left: auto;
+  width: 45px;
+  height: 45px;
+  border: none;
+  background: transparent;
+  color: #ffffff;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+
+/* =========================
+   Tablet
+========================= */
+
+@media (max-width: 992px) {
+
+  .topbar {
+    padding: 0 3%;
+  }
+
+  .brand-section {
+    padding: 15px 3%;
+  }
+
+  .main-nav {
+    padding: 0 3%;
+  }
+
+  .nav-links > a,
+  .nav-dropdown > a {
+    padding: 0 12px;
+    font-size: 14px;
+  }
+
+  .nav-search {
+    width: 220px;
+  }
+
+}
+
+
+/* =========================
+   Mobile
+========================= */
+
+@media (max-width: 768px) {
+
+  /* Topbar */
+
+  .topbar {
+    min-height: auto;
+    padding: 8px 15px;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .topbar-left {
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .topbar-left a,
+  .topbar-left span {
+    font-size: 11px;
+    padding: 5px 8px;
+  }
+
+  .topbar-social {
+    justify-content: center;
+  }
+
+  .topbar-social a {
+    padding: 5px 8px;
+    font-size: 12px;
+  }
+
+
+  /* Brand */
+
+  .brand-section {
+    min-height: 100px;
+    padding: 15px;
+    justify-content: center;
+  }
+
+  .brand-logo img {
+    width: 130px;
+  }
+
+  .header-ad {
+    display: none;
+  }
+
+
+  /* Navigation */
+
+  .main-nav {
+    min-height: 60px;
+    padding: 0 15px;
+    position: relative;
+    justify-content: space-between;
+  }
+
+  .mobile-logo {
+    display: block;
+  }
+
+  .mobile-logo img {
+    width: 100px;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+
+  /* Mobile Links */
+
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    height: auto;
+    background-color: #1e2024;
+    flex-direction: column;
+    align-items: stretch;
+    z-index: 9999;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .nav-links > a,
+  .nav-dropdown > a {
+    width: 100%;
+    height: auto;
+    min-height: 50px;
+    padding: 0 20px;
+    border-top: 1px solid #333;
+  }
+
+
+  /* Dropdown */
+
+  .nav-dropdown {
+    width: 100%;
+  }
+
+  .dropdown-menu {
+    position: static;
+    width: 100%;
+    min-width: 0;
+    border: none;
+  }
+
+  .nav-dropdown:hover .dropdown-menu {
+    display: block;
+  }
+
+
+  /* Search */
+
+  .nav-search {
+    display: none;
+  }
+
+}
