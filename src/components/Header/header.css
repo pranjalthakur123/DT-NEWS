@@ -55,8 +55,8 @@
 ========================= */
 
 .brand-section {
-  min-height: 140px;
-  padding: 15px 5%;
+  min-height: 100px;
+  padding: 2px 15px;
   background-color: #ffffff;
   display: flex;
   align-items: center;
