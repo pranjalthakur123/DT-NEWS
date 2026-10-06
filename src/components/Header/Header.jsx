@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import "./header.css";
+import logo from "../assets/logo.jpg";
 
 function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -43,7 +44,7 @@ function Header() {
 
         <Link to="/" className="brand-logo">
           <img
-            src="/src/assets/logo.jpg"
+            src={logo}
             alt="DT News"
           />
         </Link>
