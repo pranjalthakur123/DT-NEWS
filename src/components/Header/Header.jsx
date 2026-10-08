@@ -87,7 +87,11 @@ function Header() {
           </Link>
 
           <Link to="/category" onClick={() => setMenuOpen(false)}>
-            Category
+            Sports
+          </Link>
+
+          <Link to="/category" onClick={() => setMenuOpen(false)}>
+            Politics
           </Link>
 
           <Link to="/single" onClick={() => setMenuOpen(false)}>
@@ -98,10 +102,16 @@ function Header() {
             <Link to="#">Dropdown</Link>
 
             <div className="dropdown-menu">
-              <Link to="#">Menu item 1</Link>
-              <Link to="#">Menu item 2</Link>
-              <Link to="#">Menu item 3</Link>
-            </div>
+  <Link to="#">Politics</Link>
+  <Link to="#">Business</Link>
+  <Link to="#">Corporate Business</Link>
+  <Link to="#">Health</Link>
+  <Link to="#">Education</Link>
+  <Link to="#">Science</Link>
+  <Link to="#">Foods</Link>
+  <Link to="#">Entertainment</Link>
+  <Link to="#">Travel & Lifestyle</Link>
+</div>
           </div>
 
           <Link to="/contact" onClick={() => setMenuOpen(false)}>
